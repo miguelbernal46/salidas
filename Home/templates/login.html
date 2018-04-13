@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block titulo %}
+Login
+{% endblock %}
+{% block contenido %}
+<div class="row">
+	
+	<h2>{{ msj }}</h2>
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ formulario.as_p }}
+		<div class="col-md-5">
+			<input type="submit" value="Inicar Sesion" class="btn btn-primary">
+		</div>
+	</form>
+</div>
+{% endblock %}

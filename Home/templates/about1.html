@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<header>
+		<font face="algerian, arial,verdana">
+			<center> <H1>MOTOS</H1> 
+			</BR>
+			</center>
+		</font>
+
+	</header>
+			
+
+		<a href="{% url 'vista_about'%}">contacto1</a>
+		<a href="{% url 'vista_empleado'%}">empleados</a>
+		<a href="{% url 'vista_empresas'%}">empresas</a>
+
+		{% for i in moto %}
+			<p>{{i}}</p>
+		{% endfor %}
+		<center><img src="https://img.autocosmos.com/contenidos/galerias/1600x1200/GAZ_bfc2863726154866b4aabdba3ade4f87.jpg" width="50%"></center>
+
+</body>
+<style type="text/css">
+
+
+	header{
+		 
+		background: #BDBDBD;
+	}
+	body{
+		background: #A4A4A4;
+
+	}
+	body{
+		
+
+
+
+
+</style>
+
+
+
+
+
+</html>

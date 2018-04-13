@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+	lista Productos
+{% endblock %}
+<CENTER>
+	{% block contenido %}
+	<table border="1">
+		<h1>
+			lista de productos
+		</h1>
+		
+		<tr>
+			<td>nombre</td>
+			<td>descripcion</td>
+			<td>status</td>
+			<td>precio</td>
+			<td>stock</td>
+			<td>marca</td>
+		</tr>
+		<br/>
+		{% for p in lista %}
+
+			<tr>
+				<th>{{p.nombre}}</th>
+				<th>{{p.descripcion}}</th>
+				<th>{{p.status}}</th>
+				<th>{{p.precio}}</th>
+				<th>{{p.stock}}</th>
+				<th>{{p.marca}}</th>
+				<th><a href="{% url 'vista_ver_producto' id_prod=p.id %}">ver detalle</a></th>
+			</tr>
+		{% endfor %}
+		
+	</table>
+
+</CENTER>
+{% endblock %}

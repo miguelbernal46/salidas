@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet"  href="{% static 'css/about.css' %}" />
+</head>
+<body>
+	{% block contenido %}
+<div id="navegar">
+		<ul >
+			<li><a href=""></a>inicio</li>
+			<li><a href="{%url 'vista_lista_producto'%}">Productos</a></li>
+			<li><a href="{%url 'vista_lista_categoria'%}">Categoria</a></li>
+			<li><a href="{%url 'vista_lista_marca'%}",>Marca</a></li>
+		</ul>
+</div>
+{% endblock %}
+
+</body>
+</html>

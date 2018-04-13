@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block titulo%}
+		<font face="Comic Sans MS, arial,verdana">
+			<center> <H1>BIOGRAFIA</H1> 
+			</BR>
+				<H4>MIGUEL ALEJANDRO BERNAL BOLAÑOS</H4>
+			</center>
+		</font>
+
+	<h2>
+{% endblock %}
+{% block contenido %}
+	
+		</h2>
+	<p1> Mi nombre es Miguel Alejandro Bernal Bolaños tengo 18 años naci el 28 de septiembre de 1999 en Popayan(CAUCA) soy de piendamo y actualmente vivio el el barrio bello horizonte</p1>
+	<br>
+	<nav>
+		<a href="{% url 'vista_empleado'%}">empleados</a>
+		<a href="{% url 'vista_motos'%}">motos</a>
+		<a href="{% url 'vista_empresas'%}">empresas</a>
+	</nav>
+{% endblock%}
+		
+
+

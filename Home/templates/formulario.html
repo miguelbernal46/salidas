@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+</head>
+<body>
+	{% if datos_recibidos %}
+		<h2>la informacion es correcta</h2>
+		{{ name }}
+		{{ age }}
+		{{ fn }}
+		{{ phone }}
+		{{ Forever }}
+		{{ sex }}
+		{{ user }}
+		{{ password }}
+		{{ email }}
+
+	{% else %}
+	<form action="" method="POST">
+		{% csrf_token %}
+		{{ taller.as_p }}
+		<input type="submit" value="ENVIAR">
+	</form>
+	{% endif %}
+</body>
+</html>

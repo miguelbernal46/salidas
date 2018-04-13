@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>empleados</title>
+</head>
+<body>
+	<h1>EMPLEADOS</h1>
+		<a href="{% url 'vista_about'%}">contacto1</a>
+		<a href="{% url 'vista_motos'%}">motos</a>
+		<a href="{% url 'vista_empresas'%}">empresas</a>
+
+		{% for i in Nombre %}
+			<p>{{i}}</p>
+		{% endfor %}
+</body>
+</html>

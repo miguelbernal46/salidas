@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contacto</title>
+</head>
+<body>
+	{% if info_enviado %}
+		<h2>la informacion es correcta</h2>
+		{{ email }}
+		{{ subject }}
+		{{ text }}
+	{% else %}
+		<form action="" method="POST">
+			{% csrf_token %}
+			{{ formulario.as_p }}
+
+			<input type="submit" value="ENVIAR">
+		</form>
+	{% endif %}
+</body>
+</html>
